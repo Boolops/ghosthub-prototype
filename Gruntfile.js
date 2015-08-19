@@ -22,14 +22,22 @@ module.exports = function(grunt) {
     watch: {
       express: {
         files:  [ 'src/**/*.*' ],
-        tasks:  [ 'less' ],
+        tasks:  [ 'dev' ],
         options: {
           spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
+        }
+      }
+    },
+    concat: {
+      main: {
+        files: {
+          'pages/assets/main.js': 'src/js/*.js'
         }
       }
     }
   });
 
-  grunt.registerTask('default', ['less', 'express:dev', 'watch']);
+  grunt.registerTask('dev', ['less', 'concat']);
+  grunt.registerTask('default', ['dev', 'express:dev', 'watch']);
 
 };
