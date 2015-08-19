@@ -15,12 +15,21 @@ module.exports = function(grunt) {
         options: {
           port: 8080,
           script: 'server.js',
-          background: false
+          background: true
+        }
+      }
+    },
+    watch: {
+      express: {
+        files:  [ 'src/**/*.*' ],
+        tasks:  [ 'less' ],
+        options: {
+          spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
         }
       }
     }
   });
 
-  grunt.registerTask('default', ['less', 'express']);
+  grunt.registerTask('default', ['less', 'express:dev', 'watch']);
 
 };
