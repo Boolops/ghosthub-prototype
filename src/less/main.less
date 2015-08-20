@@ -1,8 +1,15 @@
 @grey: #e7e7e7;
 
+body, html{
+    height: 100%;
+}
+.container{
+ min-height:100%;
+}
 
 body {
     background: @grey;
+    
 }
 .page-header h5{
     margin-top:20px;
@@ -12,4 +19,54 @@ body {
     text-decoration: none;
     color: inherit;
     
+}
+
+
+/*-- FOOTER---*/
+
+
+.footer{
+    border:1px solid black;
+    min-height:45px;
+    margin-top:-45px;
+    padding: 5px;
+    
+}
+.footer ul{
+    padding: 5px 5px 5px 10px;
+    width:250px;
+    display: inline-block;
+    margin-bottom: 0;
+    
+}
+.footer ul li{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.footer ul li:first-child{
+    border-right: 1px solid black;
+}
+.footer ul li a{
+    color: #333;
+}
+.glyphicon.glyphicon-copyright-mark{
+    margin-right:5px;
+}
+.btn.btn-default{
+    float: right;
+}
+@media (max-width: 767px){
+    .btn.btn-default{
+        width:100%;
+    }
+    .footer{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width:992px){
+    .footer button{
+        display: none;
+    }
 }
