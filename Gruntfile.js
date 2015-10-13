@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     replace({
         regex: original,
         replacement: replacement,
-        paths: ['index.html'],
+        paths: ['index.html', 'pages/about/index.html', 'pages/homepage/index.html', 'pages/tag/index.html'],
         recursive: true,
         silent: true
     });
