@@ -51,11 +51,11 @@ module.exports = function(grunt) {
   };
 
   grunt.registerTask('basehrefqa', 'Update base href', function() {
-    replaceHTML('http://localhost:8080', 'http://boolops.github.io/ghosthub-prototype');
+    replaceHTML('http://localhost:8080', 'http://boolops.github.io/ghosthub-prototype/');
   });
 
   grunt.registerTask('basehrefdev', 'Update base href', function() {
-    replaceHTML('http://boolops.github.io/ghosthub-prototype', 'http://localhost:8080');
+    replaceHTML('http://boolops.github.io/ghosthub-prototype/', 'http://localhost:8080');
   });
 
   grunt.registerTask('dev', ['less', 'concat']);
