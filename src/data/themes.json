@@ -1,0 +1,14 @@
+{
+  "hello": "Hi",
+  "ghost-themes": [
+    {
+      "title": "Some title here",
+      "author": "Some author here",
+      "img": "img path here",
+      "link": "some link here",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    }
+  ]
+}

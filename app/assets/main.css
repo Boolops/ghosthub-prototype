@@ -1,0 +1,140 @@
+body,
+html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100%;
+}
+.clearfix {
+  clear: both;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+body {
+  background: #e7e7e7;
+}
+.page-header h5 {
+  margin-top: 20px;
+  font-style: italic;
+}
+.page-header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+/*-- About section --- */
+.about a {
+  text-decoration: underline;
+  margin-bottom: 15px;
+  display: block;
+}
+.about .about-section {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+/*-- FOOTER---*/
+.footer {
+  min-height: 45px;
+  margin-top: -45px;
+  padding: 5px;
+}
+.footer ul {
+  padding: 5px 5px 5px 10px;
+  width: 250px;
+  display: block;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer ul li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.footer ul li a {
+  color: #333;
+}
+.footer ul li:first-child {
+  border-right: 1px solid black;
+}
+.glyphicon.glyphicon-copyright-mark {
+  margin-right: 5px;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 1%;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-bottom: 30px;
+  }
+  .footer .back-to-top {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    margin-top: 0;
+  }
+}
+/* --- HOMEPAGE --- */
+.nav-pagination {
+  float: right;
+  margin-bottom: 45px;
+}
+.col {
+  margin-bottom: 30px;
+}
+.template-block {
+  border: 1px solid grey;
+  padding-bottom: 10px;
+}
+.template-block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.template-block button {
+  float: right;
+  height: 44px;
+}
+.template-block .pagination {
+  margin: 5px 0;
+}
+.active {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.theme {
+  width: 50%;
+  display: inline-block;
+}
+.theme.name {
+  text-align: right;
+  padding-right: 10px;
+}
+.theme.author {
+  padding-left: 10px;
+}
+.theme-link {
+  color: white;
+  font-size: 18px;
+}
+.theme-link:hover {
+  color: white;
+}

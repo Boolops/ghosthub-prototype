@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "assemble": "^0.4.42",
     "express": "^4.13.3",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-less": "^1.0.1",

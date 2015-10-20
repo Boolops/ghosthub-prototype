@@ -3,13 +3,25 @@ var replace = require('replace');
 
 module.exports = function(grunt) {
 
-  require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', 'assemble']});
 
   grunt.initConfig({
+    assemble: {
+      options: {
+        flatten: true,
+        layout: 'src/hbs/layouts/main.hbs',
+        data: 'src/data/themes.json'
+      },
+      pages: {
+        files: {
+          'app/': ['src/hbs/pages/index.hbs']
+        }
+      }
+    },
     less: {
       dev: {
         files: {
-          'pages/assets/main.css': 'src/less/main.less'
+          'app/assets/main.css': 'src/less/main.less'
         }
       }
     },
@@ -27,14 +39,15 @@ module.exports = function(grunt) {
         files:  [ 'src/**/*.*' ],
         tasks:  [ 'dev' ],
         options: {
-          spawn: false // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
+          spawn: false, // for grunt-contrib-watch v0.5.0+, "nospawn: true" for lower versions. Without this option specified express won't be reloaded
+          verbose: true
         }
       }
     },
     concat: {
       main: {
         files: {
-          'pages/assets/main.js': 'src/js/*.js'
+          'app/assets/main.js': 'src/js/*.js'
         }
       }
     }
@@ -44,7 +57,8 @@ module.exports = function(grunt) {
     replace({
         regex: original,
         replacement: replacement,
-        paths: ['index.html', 'pages/about/index.html', 'pages/homepage/index.html', 'pages/tag/index.html'],
+        //paths: ['index.html', 'app/about/index.html', 'app/homepage/index.html', 'app/tag/index.html'],
+        paths: ['index.html'],
         recursive: true,
         silent: true
     });
@@ -58,7 +72,7 @@ module.exports = function(grunt) {
     replaceHTML('http://boolops.github.io/ghosthub-prototype/', 'http://localhost:8080');
   });
 
-  grunt.registerTask('dev', ['less', 'concat']);
+  grunt.registerTask('dev', ['less', 'concat', 'assemble']);
   grunt.registerTask('default', ['dev', 'basehrefdev', 'express:dev', 'watch']);
   grunt.registerTask('qa', ['dev', 'basehrefqa']);
 
