@@ -4,15 +4,15 @@ $(document).ready(function(){
 			type:'inline'
 	 	});
 
-		$('.gallery').each(function() { // the containers for all your galleries
-		    $(this).magnificPopup({
-		        delegate: 'a', // the selector for gallery item
-		        type: 'image',
-		        gallery: {
-		          enabled:true
-		        }
-		    });
-		});
+		// $('.gallery').each(function() { // the containers for all your galleries
+		//     $(this).magnificPopup({
+		//         delegate: 'a', // the selector for gallery item
+		//         type: 'image',
+		//         gallery: {
+		//           enabled:true
+		//         }
+		//     });
+		// });
 
 // button scroll to top
 		$(window).scroll(function(){
@@ -31,23 +31,27 @@ $(document).ready(function(){
 
 
 // gallery
-$('.theme-popup').magnificPopup({
-    items: [
-      {
-        src: 'images/pict1.png',
-        title: '<a href="" class="theme-link">View the theme</a>'
-      },
-			{
-				src: 'images/pict2.png',
-				title: '<a href="" class="theme-link">View the theme</a>'
-			}
-		],
-		gallery: {
-		enabled: true
-		},
-		type: 'image'
+// $('.theme-popup').magnificPopup({
+//     items: [
+//       {
+//         src: 'images/themes/Escritor.png',
+//         title: '<a href="" class="theme-link">View the theme</a>'
+//       },
+// 		],
+// 		gallery: {
+// 		enabled: true
+// 		},
+// 		type: 'image'
+// });
+$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
 });
-
 
 
 

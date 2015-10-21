@@ -10,11 +10,12 @@ module.exports = function(grunt) {
       options: {
         flatten: true,
         layout: 'src/hbs/layouts/main.hbs',
-        data: 'src/data/themes.json'
+        data: 'src/data/themes.json',
+        partials: 'src/components/*.hbs'
       },
       pages: {
         files: {
-          'app/': ['src/hbs/pages/index.hbs']
+          'app/': ['src/hbs/pages/index.hbs', 'src/hbs/pages/free.hbs', 'src/hbs/pages/premium.hbs', 'src/hbs/pages/minimalistic.hbs']
         }
       }
     },

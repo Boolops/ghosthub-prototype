@@ -1,27 +1,22 @@
 {{#with themes}}
-
 <div class="navigation">
     <ul class="breadcrumb">
       <li><a href="free.html">Free</a></li>
-      <li><a href="premium.html">Premium</a></li>
+      <li class="active">Premium</li>
       <li><a href="minimalistic.html">Minimalistic</a></li>
     </ul>
 </div>
 <div class="row">
 {{#each ghost-themes}}
+{{#if premium}}
   <div class=" col col-xs-12 col-sm-6 col-md-4">
     <div class="template-block">
       <h4 class="theme author">{{author}}</h4><h4 class="theme name">{{title}}</h4>
 
-      <!-- <a href="" class="theme-popup">
-        <img src="{{image}}">
-      </a> -->
+      <a href="" class="theme-popup">
 
-      <div class="gallery">
-        {{#each gallery}}
-         <a href="{{image}}"><img src="{{thumbnail}}"></a>
-         {{/each}}
-      </div>
+      <img src="{{image}}">
+      </a>
       <ul class="pagination pagination-sm">
         {{#if free}}
           <li><a href="free.html">Free</a></li>
@@ -37,6 +32,9 @@
     </div>
     <div class="clearfix"></div>
   </div>
+  {{/if}}
 {{/each}}
 </div>
+
+
 {{/with}}

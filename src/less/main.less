@@ -1,15 +1,19 @@
 @grey: #e7e7e7;
 @gap: 10px;
-
-
-body, html{
+html{
+  position:relative;
+  min-height: 100%;
+}
+body{
     height: 100%;
+    background: @grey;
 }
 *{
     box-sizing: border-box;
 }
 .container{
-    min-height:100%;
+    height:100%;
+    position:relative;
 }
 .clearfix{
   clear:both;
@@ -17,9 +21,6 @@ body, html{
 .row{
     margin-left: 0;
     margin-right: 0;
-}
-body {
-    background: @grey;
 }
 .page-header{
     h5{
@@ -54,70 +55,50 @@ body {
 
 
 .footer{
-    min-height:45px;
-    margin-top:-45px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom:30px;
+    height:45px;
+    //margin-top:-45px;
     padding: 5px;
-    ul{
-      padding: 5px 5px 5px 10px;
-      width:250px;
-      display: block;
-      margin-bottom:0;
-      margin-left: auto;
-      margin-right: auto;
-        li{
-          display: inline-block;
-          padding-right: 5px;
-          padding-left: 5px;
-        a{
-            color: #333;
-           }
-        }
-        li:first-child{
-          border-right: 1px solid black;
-        }
-    }
-}
-
-.glyphicon.glyphicon-copyright-mark{
-    margin-right:5px;
-}
-.back-to-top{
-    //float: right;
-    position:fixed;
-    bottom:5px;
-    right:1%;
-
-}
-@media (max-width: 767px){
-    .footer{
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (min-width:992px){
-    // .footer button{
-    //     display: none;
-    // }
-}
-@media (max-width:768px){
-    .footer{
-        margin-bottom:30px;
-        .back-to-top{
-            width:100%;
+    text-align: center;
+      .back-to-top{
+          width:100%;
+          position:fixed;
+          bottom:0;
+          right:0;
+      }
+      ul{
+        padding: 5px 5px 5px 10px;
+        width:300px;
+        display: block;
+        margin-bottom:0;
+        margin-left: auto;
+        margin-right: auto;
+          li{
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+            .glyphicon.glyphicon-copyright-mark{ margin-right:5px;}
+          }
+          li:first-child{border-right: 1px solid black;}
+      }
+      @media (min-width: 768px){
+        margin-bottom: 0px;
+          .back-to-top{
+            display:none;
             position:fixed;
-            bottom:0;
-            right:0;
-        }
-    }
+            bottom:5px;
+            right:1%;
+            width:auto;
+          }
+      }
+      @media (min-width: 992px){
+        bottom: 0;
+        position:absolute;
+        width:100%;
+      }
 }
-@media (max-width: 992px){
-    .footer{
-        margin-top: 0;
-    }
-}
-
-
 /* --- HOMEPAGE --- */
 
 .nav-pagination{
@@ -131,16 +112,17 @@ body {
 }
 
 .template-block{
-    border:1px solid grey;
+  //  border:1px solid grey;
     padding-bottom: @gap;
     img{
       width:100%;
       height:auto;
       margin-bottom: @gap;
     }
-    button{
+    .view-theme{
       float:right;
       height:44px;
+      line-height: 30px;
       //margin-right: @gap;
     }
     .pagination{
@@ -170,4 +152,12 @@ body {
     &:hover{
       color:white;
     }
+}
+.gallery{
+  a{
+    display: none;
+  }
+  a:first-child{
+    display: block;
+  }
 }
