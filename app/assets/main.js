@@ -4,16 +4,6 @@ $(document).ready(function(){
 			type:'inline'
 	 	});
 
-		// $('.gallery').each(function() { // the containers for all your galleries
-		//     $(this).magnificPopup({
-		//         delegate: 'a', // the selector for gallery item
-		//         type: 'image',
-		//         gallery: {
-		//           enabled:true
-		//         }
-		//     });
-		// });
-
 // button scroll to top
 		$(window).scroll(function(){
 			if ($(this).scrollTop() > 100) {
@@ -43,12 +33,28 @@ $(document).ready(function(){
 // 		},
 // 		type: 'image'
 // });
+
 $('.gallery').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-        delegate: 'a', // the selector for gallery item
+	var themeImage = $(this).data('image');
+	console.log(themeImage);
+	var themeItem = themeImage.split(",");
+	console.log(themeItem);
+	var themeLink = $(this).data('link');
+	console.log(themeLink);
+		$(this).magnificPopup({
         type: 'image',
+				items: [
+					{
+						src: themeItem[0],
+						title: "<a href='"+ themeLink + "' class='theme-link' target='_blank'>View the theme</a>"
+					},
+					{
+						src: themeItem[1],
+						title: "<a href='"+ themeLink + "' class='theme-link' target='_blank'>View the theme</a>"
+					}
+				],
         gallery: {
-          enabled:true
+          enabled:true,
         }
     });
 });

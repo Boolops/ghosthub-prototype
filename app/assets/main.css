@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+.clearfix {
+  clear: both;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -6,17 +12,11 @@ body {
   height: 100%;
   background: #e7e7e7;
 }
-* {
-  box-sizing: border-box;
-}
 .container {
   height: 100%;
   position: relative;
 }
-.clearfix {
-  clear: both;
-}
-.row {
+.container .row {
   margin-left: 0;
   margin-right: 0;
 }
@@ -28,24 +28,25 @@ body {
   text-decoration: none;
   color: inherit;
 }
-/*-- About section --- */
-.about a {
-  text-decoration: underline;
-  margin-bottom: 15px;
-  display: block;
+/*-- About section ---
+.about{
+    a{
+      text-decoration: underline;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .about-section{
+      border:1px solid black;
+      padding: @gap;
+      margin-bottom: 15px;
+    }
 }
-.about .about-section {
-  border: 1px solid black;
-  padding: 10px;
-  margin-bottom: 15px;
-}
+
 /*-- FOOTER---*/
 .footer {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 5px 0;
   margin-bottom: 30px;
   height: 45px;
-  padding: 5px;
   text-align: center;
 }
 .footer .back-to-top {
@@ -70,6 +71,9 @@ body {
 .footer ul li .glyphicon.glyphicon-copyright-mark {
   margin-right: 5px;
 }
+.footer ul li a {
+  color: inherit;
+}
 .footer ul li:first-child {
   border-right: 1px solid black;
 }
@@ -93,10 +97,6 @@ body {
   }
 }
 /* --- HOMEPAGE --- */
-.nav-pagination {
-  float: right;
-  margin-bottom: 45px;
-}
 .col {
   margin-bottom: 30px;
 }

@@ -17,9 +17,11 @@
         <img src="{{image}}">
       </a> -->
 
-      <div class="gallery">
+      <div class="gallery" data-link="{{link}}" data-image="{{#each gallery}}{{image}},{{/each}}">
+
         {{#each gallery}}
          <a href="{{image}}"><img src="{{thumbnail}}"></a>
+         <!-- <a href="" class="theme-link">View the theme</a> -->
          {{/each}}
       </div>
       <ul class="pagination pagination-sm">

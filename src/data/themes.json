@@ -7,10 +7,11 @@
       "image": "images/themes/Escritor.png",
       "gallery":[{"image":"images/themes/escritor2.png",
                   "thumbnail": "images/themes/Escritor.png"},
-                  {"image":"images/themes/escritor2.png",
+                  {"image":"images/themes/Escritor.png",
                     "thumbnail": "images/themes/Escritor.png"}
                 ],
       "link": "https://github.com/ozywuli/escritor-ghost-theme",
+      
       "free": true,
       "premium": false,
       "minimalictic": false
