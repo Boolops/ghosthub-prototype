@@ -4,14 +4,13 @@
     {
       "title": "Escritor",
       "author": "Ozy Wu-Li",
-      "image": "images/themes/Escritor.png",
-      "gallery":[{"image":"images/themes/escritor2.png",
-                  "thumbnail": "images/themes/Escritor.png"},
-                  {"image":"images/themes/Escritor.png",
-                    "thumbnail": "images/themes/Escritor.png"}
+      "gallery":[{"image":"0B1uMHsSu0YjdbGVMOWl5c21VUFk",
+                  "thumbnail": "0B1uMHsSu0YjdbGVMOWl5c21VUFk"},
+                  {"image":"0B1uMHsSu0YjdUUp3MlRqd3RUYm8"},
+                  {"image":"0B1uMHsSu0YjdUGl1YmhNQnU1Rkk"},
+                  {"image":"0B1uMHsSu0Yjdby1rbEYxc2hTZ1U"}
                 ],
       "link": "https://github.com/ozywuli/escritor-ghost-theme",
-      
       "free": true,
       "premium": false,
       "minimalictic": false
@@ -19,11 +18,12 @@
     {
       "title": "Mneme",
       "author": "Messier219",
-      "image": "images/themes/Mneme.png",
-      "gallery":[{"image":"images/themes/mneme2.png",
-                  "thumbnail": "images/themes/mneme.png"},
-                  {"image":"images/themes/.png",
-                    "thumbnail": "images/themes/.png"}
+      "gallery":[{"image":"0B1uMHsSu0YjdUVVzczg1d0xjcTQ",
+                  "thumbnail": "0B1uMHsSu0YjdUVVzczg1d0xjcTQ"},
+                  {"image":"0B1uMHsSu0YjdQVJ4VERGdy1wSkk"},
+                  {"image":"0B1uMHsSu0YjdRi15OFZxeFd3N00"},
+                  {"image":"0B1uMHsSu0YjdME1mM091RElsLU0"},
+                  {"image":"0B1uMHsSu0YjdWnlXOGlINjFkX2M"}
                 ],
       "link": "https://github.com/messier219/mneme/",
       "free": true,
@@ -31,12 +31,281 @@
       "minimalictic": false
     },
     {
-      "title": "Some title here",
-      "author": "Some author here",
-      "image": "http://placehold.it/320x216",
-      "link": "theme link here",
+      "title": "Brage",
+      "author": "Switchbit",
+      "gallery":[{"image":"0B1uMHsSu0YjdWlZzeUFtNXVaX2s",
+                  "thumbnail": "0B1uMHsSu0YjdWlZzeUFtNXVaX2s"},
+                  {"image":"0B1uMHsSu0YjdZGdsZWNoQkJ5dnc"},
+                  {"image":"0B1uMHsSu0YjdZGRmU2p6OUFCRUE"}
+                ],
+      "link": "https://github.com/switchbitio/brage-ghost-theme",
       "free": true,
-      "premium": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Ascend",
+      "author": "aftertype.com",
+      "gallery":[{"image":"0B1uMHsSu0YjddDlucG1xZ3dkVzQ",
+                  "thumbnail": "0B1uMHsSu0YjddDlucG1xZ3dkVzQ"},
+                  {"image":"0B1uMHsSu0Yjda0VwNmw2bE1sQ0k"},
+                  {"image":"0B1uMHsSu0Yjdd0xUYS1SRnowdUk"},
+                  {"image":"0B1uMHsSu0YjdQXJDcFh2Y091a28"}
+                ],
+      "link": "http://ascend.aftertype.com/",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "MNML 3",
+      "author": "Curiositry",
+      "gallery":[{"image":"0B1uMHsSu0Yjdb2d2aUxlTF9BbFE",
+                  "thumbnail": "0B1uMHsSu0Yjdb2d2aUxlTF9BbFE"},
+                  {"image":"0B1uMHsSu0YjdNHR1X2g3UFVlMWc"},
+                  {"image":"0B1uMHsSu0YjdTzVYRlFkR1J4RkE"},
+                  {"image":"0B1uMHsSu0YjdcVZpVEwzU0ZvWlk"}
+                ],
+      "link": "https://github.com/curiositry/mnml-ghost-theme",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "Uno Zen",
+      "author": "Kiko Beats",
+      "gallery":[{"image":"0B1uMHsSu0YjdRnBfSFIwREhiQU0",
+                  "thumbnail": "0B1uMHsSu0YjdRnBfSFIwREhiQU0"},
+                  {"image":"0B1uMHsSu0YjdTVN6R3lwcGJDUTQ"},
+                  {"image":"0B1uMHsSu0YjdSkxvWFY1c0xMeHc"}
+                ],
+      "link": "https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "Readable",
+      "author": "Johel Alvarez",
+      "gallery":[{"image":"",
+                  "thumbnail": "0B1uMHsSu0YjdejBkWjFVei1rQnc"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/johelaq/readable",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "Evergreen",
+      "author": "Daniel Tamkin",
+      "gallery":[{"image":"",
+                  "thumbnail": "0B1uMHsSu0YjdejBkWjFVei1rQnc"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/DanielTamkin/evergreen",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "JavaScript Things",
+      "author": " Daniel Balastegui",
+      "gallery":[{"image":"",
+                  "thumbnail": "0B1uMHsSu0YjdejBkWjFVei1rQnc"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/dbalas/jsthings-theme",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Webkid",
+      "author": "webkid.io",
+      "gallery":[{"image":"0B1uMHsSu0YjdakQ4UWl4Z1JodzA",
+                  "thumbnail": "0B1uMHsSu0YjdakQ4UWl4Z1JodzA"},
+                  {"image":"0B1uMHsSu0YjdMHdMSlBVYi1YV3M"}
+                ],
+      "link": "https://github.com/wbkd/ghost-wbkd",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Starmap",
+      "author": "Daniel Tamkin",
+      "gallery":[{"image":"",
+                  "thumbnail": "0B1uMHsSu0YjdejBkWjFVei1rQnc"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/DanielTamkin/starmap",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Placidity",
+      "author": "Daniel Tamkin",
+      "gallery":[{"image":"",
+                  "thumbnail": "0B1uMHsSu0YjdejBkWjFVei1rQnc"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/DanielTamkin/placidity",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Breathe",
+      "author": "Belén Albeza",
+      "gallery":[{"image":"",
+                  "thumbnail": "0B1uMHsSu0YjdejBkWjFVei1rQnc"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/belen-albeza/breathe-theme",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "Interphase",
+      "author": "Chase Sillevis",
+      "gallery":[{"image":"0B1uMHsSu0YjdOS04emRIOU1IXzg",
+                  "thumbnail": "0B1uMHsSu0YjdOS04emRIOU1IXzg"},
+                  {"image":""}
+                ],
+      "link": "https://github.com/DeviaVir/ghost-interphase-theme",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "GodoFredo-Blog",
+      "author": "GodoFredoNinja",
+      "gallery":[{"image":"0B1uMHsSu0YjdNmVLSkhaQi1LY0E",
+                  "thumbnail": "0B1uMHsSu0YjdNmVLSkhaQi1LY0E"},
+                  {"image":"0B1uMHsSu0YjdbkhQMWhJemRHQ00"},
+                  {"image":"0B1uMHsSu0YjdZE9yaDJrMFp2U2c"}
+                ],
+      "link": "https://github.com/godofredoninja/Mapache/tree/master",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "OpenWriter",
+      "author": "Ire Aderinokun",
+      "gallery":[{"image":"0B1uMHsSu0YjdQ2VKYVFFcTlqRnM",
+                  "thumbnail": "0B1uMHsSu0YjdU0ZqWW9rNEMtQ1k"},
+                  {"image":"0B1uMHsSu0YjdaUl3T0dKaUhWTUk"},
+                  {"image":"0B1uMHsSu0YjdakptVGU1Z3AzR1E"},
+                  {"image":"0B1uMHsSu0YjdMGhZa1RYVDNaVm8"}
+                ],
+      "link": "https://github.com/ireade/openwriter",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Ordentlich",
+      "author": "HAPPY CODING",
+      "gallery":[{"image":"0B1uMHsSu0Yjda1NISVNTRFpYN2M",
+                  "thumbnail": "0B1uMHsSu0Yjda1NISVNTRFpYN2M"},
+                  {"image":"0B1uMHsSu0YjddUpBeEdHU29XYmM"},
+                  {"image":"0B1uMHsSu0YjdbERLQnhkR3o2Q2M"}
+                ],
+      "link": "https://github.com/happy-coding/ordentlich",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Glimpse",
+      "author": "Bensventures",
+      "gallery":[{"image":"0B1uMHsSu0YjdeHlBVnRjc3d6V28",
+                  "thumbnail": "0B1uMHsSu0YjdeHlBVnRjc3d6V28"},
+                  {"image":"0B1uMHsSu0YjdSE9MV245b1BCZzA"},
+                  {"image":"0B1uMHsSu0Yjda2czMlFVSXV2U28"},
+                  {"image":"0B1uMHsSu0Yjdb2lmMEk2YnoxQUk"}
+                ],
+      "link": "https://github.com/bensventures/Glimpse",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "GoClean",
+      "author": "Jan Metzger",
+      "gallery":[{"image":"0B1uMHsSu0YjdclA5cEpWeU9TYXc",
+                  "thumbnail": "0B1uMHsSu0YjdclA5cEpWeU9TYXc"},
+                  {"image":"0B1uMHsSu0YjdbU9SWjFQLVNjeFk"},
+                  {"image":"0B1uMHsSu0YjdOGdGX1VvZ2Z6U00"}
+                ],
+      "link": "https://github.com/Zazama/GoClean",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Hoist",
+      "author": "Hoist",
+      "gallery":[{"image":"0B1uMHsSu0YjdSU9IUmJKa0lUenM",
+                  "thumbnail": "0B1uMHsSu0YjdSU9IUmJKa0lUenM"}
+                ],
+      "link": "http://hoist.io/blog/fresh-open-source-coat-of-paint/",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Plainly",
+      "author": "MrJuliuss",
+      "gallery":[{"image":"0B1uMHsSu0YjdZkhRNVRDWFpqaTg",
+                  "thumbnail": "0B1uMHsSu0YjdZkhRNVRDWFpqaTg"},
+                  {"image":"0B1uMHsSu0YjdWl9tZHRjQmg2ZlE"},
+                  {"image":"0B1uMHsSu0YjdVTR1d1lyaEkwZzQ"}
+                ],
+      "link": "https://github.com/MrJuliuss/plainly",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Gunter",
+      "author": "Germán Encinas",
+      "gallery":[{"image":"0B1uMHsSu0Yjdc0FEMFpXQzF4eGM",
+                  "thumbnail": "0B1uMHsSu0Yjdc0FEMFpXQzF4eGM"},
+                  {"image":"0B1uMHsSu0YjdNE9mMDFGQkk5U2M"}
+                ],
+      "link": "https://github.com/germannencinas/Gunter",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Aquila",
+      "author": "lxndio",
+      "gallery":[{"image":"0B1uMHsSu0YjdaEFFbXFoZFRUMkE",
+                  "thumbnail": "0B1uMHsSu0YjdaEFFbXFoZFRUMkE"},
+                  {"image":"0B1uMHsSu0YjdbHpfS1hGLTJuaGM"},
+                  {"image":"0B1uMHsSu0YjdMEo1OVBLSlJZbk0"}
+                ],
+      "link": "https://github.com/lxndio/Aquila",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "Steam",
+      "author": "Tommaso Barbato",
+      "gallery":[{"image":"0B1uMHsSu0YjdUk1fbElKcDRVNk0",
+                  "thumbnail": "0B1uMHsSu0YjdUk1fbElKcDRVNk0"},
+                  {"image":"0B1uMHsSu0YjdNWRLeEJ2dlFfc28"}
+                ],
+      "link": "https://github.com/epistrephein/Steam",
+      "free": true,
+      "premium": false,
       "minimalictic": true
     }
   ]

@@ -36,23 +36,19 @@ $(document).ready(function(){
 
 $('.gallery').each(function() { // the containers for all your galleries
 	var themeImage = $(this).data('image');
-	console.log(themeImage);
 	var themeItem = themeImage.split(",");
-	console.log(themeItem);
 	var themeLink = $(this).data('link');
-	console.log(themeLink);
+	var items;
+	var itemsArray = [];
+	for(var i=0; i<themeItem.length-1; i++){
+		items = {	src: themeItem[i],
+		 					title: "<a href='"+ themeLink + "' class='theme-link' target='_blank'>View the theme</a>"};
+		itemsArray.push(items);
+	}
+
 		$(this).magnificPopup({
         type: 'image',
-				items: [
-					{
-						src: themeItem[0],
-						title: "<a href='"+ themeLink + "' class='theme-link' target='_blank'>View the theme</a>"
-					},
-					{
-						src: themeItem[1],
-						title: "<a href='"+ themeLink + "' class='theme-link' target='_blank'>View the theme</a>"
-					}
-				],
+				items: itemsArray,
         gallery: {
           enabled:true,
         }

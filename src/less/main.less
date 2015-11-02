@@ -10,22 +10,31 @@
   clear:both;
 }
 html{
-  position:relative;
-  min-height: 100%;
+  //position:relative;
+  height: 100%;
 }
 body{
     height: 100%;
     background: @grey;
 }
 .container{
-    height:100%;
-    position:relative;
+    min-height:100%;
+    margin-bottom:-45px;
+    //position:relative;
     .row{
         margin-left: 0;
         margin-right: 0;
+        div:nth-child(3n+4){
+          clear:left;
+          //background:white;
+        }
     }
 }
-
+.container:after {
+  content: "";
+  display: block;
+  height:45px;
+}
 .page-header{
     h5{
       margin-top:@gap*2;
@@ -96,9 +105,9 @@ body{
           }
       }
       @media @desktop{
-        bottom: 0;
-        position:absolute;
-        width:100%;
+        margin-bottom: -45px;
+        //position:absolute;
+        //width:100%;
       }
 }
 /* --- HOMEPAGE --- */
@@ -110,6 +119,7 @@ body{
 
 .col{ margin-bottom: @gap*3;}
 .template-block{
+    //border:1px solid black;
     padding-bottom: @gap;
     img{
       width:100%;

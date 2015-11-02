@@ -1,44 +1,14 @@
 {{#with themes}}
-
-<div class="navigation">
-    <ul class="breadcrumb">
-      <li><a href="free.html">Free</a></li>
-      <li><a href="premium.html">Premium</a></li>
-      <li><a href="minimalistic.html">Minimalistic</a></li>
-    </ul>
-</div>
-<div class="row">
-{{#each ghost-themes}}
-  <div class=" col col-xs-12 col-sm-6 col-md-4">
-    <div class="template-block">
-      <h4 class="theme author">{{author}}</h4><h4 class="theme name">{{title}}</h4>
-
-      <!-- <a href="" class="theme-popup">
-        <img src="{{image}}">
-      </a> -->
-
-      <div class="gallery" data-link="{{link}}" data-image="{{#each gallery}}{{image}},{{/each}}">
-
-        {{#each gallery}}
-         <a href="{{image}}"><img src="{{thumbnail}}"></a>
-         <!-- <a href="" class="theme-link">View the theme</a> -->
-         {{/each}}
-      </div>
-      <ul class="pagination pagination-sm">
-        {{#if free}}
-          <li><a href="free.html">Free</a></li>
-        {{/if}}
-        {{#if premium}}
-          <li><a href="premium.html">Premium</a></li>
-        {{/if}}
-        {{#if minimalictic}}
-          <li><a href="minimalistic.html">Minimalistic</a></li>
-        {{/if}}
+  <div class="navigation">
+      <ul class="breadcrumb">
+        <li><a href="free.html">Free</a></li>
+        <li><a href="premium.html">Premium</a></li>
+        <li><a href="minimalistic.html">Minimalistic</a></li>
       </ul>
-      <a class="btn btn-default view-theme" href="{{link}}" target="_blank" >View the theme</a>
-    </div>
-    <div class="clearfix"></div>
   </div>
-{{/each}}
-</div>
+  <div class="row">
+    {{#each ghost-themes}}
+      {{>theme}}
+    {{/each}}
+  </div>
 {{/with}}
