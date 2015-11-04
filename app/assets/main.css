@@ -106,6 +106,7 @@ body {
   margin-bottom: 30px;
 }
 .template-block {
+  border: 1px solid white;
   padding-bottom: 10px;
 }
 .template-block img {

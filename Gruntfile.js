@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         files: {
           'app/': ['src/hbs/pages/index.hbs', 'src/hbs/pages/free.hbs', 'src/hbs/pages/premium.hbs', 'src/hbs/pages/minimalistic.hbs']
         }
-      }
+      },
     },
     less: {
       dev: {
@@ -64,6 +64,26 @@ module.exports = function(grunt) {
         silent: true
     });
   };
+
+
+  grunt.registerTask('themesDivider', 'Update base href', function() {
+    var fs = require('fs');
+    var contents = fs.readFileSync('src/data/themes.json').toString();
+    var contentsObj = JSON.parse(contents);
+
+  var createGroupedArray = function(arr, chunkSize) {
+    var groups = [], i;
+    for (i = 0; i < arr.length; i += chunkSize) {
+        groups.push(arr.slice(i, i + chunkSize));
+    }
+    return groups;
+  };
+  var result = createGroupedArray(contentsObj['ghost-themes'], 9);
+  var themeStart = '{"ghost-themes":';
+  for(var i=0; i < result.length; i++){
+      fs.writeFileSync('src/data/page' + i + '.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
+  }
+  });
 
   grunt.registerTask('basehrefqa', 'Update base href', function() {
     replaceHTML('http://localhost:8080', 'http://boolops.github.io/ghosthub-prototype/');

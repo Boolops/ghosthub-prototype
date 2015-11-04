@@ -1,0 +1,191 @@
+{"ghost-themes":[
+    {
+        "title": "Escritor",
+        "author": "Ozy Wu-Li",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdbGVMOWl5c21VUFk",
+                "thumbnail": "0B1uMHsSu0YjdZVpwenpMdVdkZlE"
+            },
+            {
+                "image": "0B1uMHsSu0YjdUUp3MlRqd3RUYm8"
+            },
+            {
+                "image": "0B1uMHsSu0YjdUGl1YmhNQnU1Rkk"
+            },
+            {
+                "image": "0B1uMHsSu0Yjdby1rbEYxc2hTZ1U"
+            }
+        ],
+        "link": "https://github.com/ozywuli/escritor-ghost-theme",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Mneme",
+        "author": "Messier219",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdUVVzczg1d0xjcTQ",
+                "thumbnail": "0B1uMHsSu0YjdZjJjWHc5Z0tMMTQ"
+            },
+            {
+                "image": "0B1uMHsSu0YjdQVJ4VERGdy1wSkk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdRi15OFZxeFd3N00"
+            },
+            {
+                "image": "0B1uMHsSu0YjdME1mM091RElsLU0"
+            },
+            {
+                "image": "0B1uMHsSu0YjdWnlXOGlINjFkX2M"
+            }
+        ],
+        "link": "https://github.com/messier219/mneme/",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Brage",
+        "author": "Switchbit",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdWlZzeUFtNXVaX2s",
+                "thumbnail": "0B1uMHsSu0YjdRUhnUjkyWFFTVXM"
+            },
+            {
+                "image": "0B1uMHsSu0YjdZGdsZWNoQkJ5dnc"
+            },
+            {
+                "image": "0B1uMHsSu0YjdZGRmU2p6OUFCRUE"
+            }
+        ],
+        "link": "https://github.com/switchbitio/brage-ghost-theme",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Ascend",
+        "author": "aftertype.com",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjddDlucG1xZ3dkVzQ",
+                "thumbnail": "0B1uMHsSu0YjdXzYwRHRLa05qODg"
+            },
+            {
+                "image": "0B1uMHsSu0Yjda0VwNmw2bE1sQ0k"
+            },
+            {
+                "image": "0B1uMHsSu0Yjdd0xUYS1SRnowdUk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdQXJDcFh2Y091a28"
+            }
+        ],
+        "link": "http://ascend.aftertype.com/",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "MNML 3",
+        "author": "Curiositry",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0Yjdb2d2aUxlTF9BbFE",
+                "thumbnail": "0B1uMHsSu0YjdUG40TEdZX2ZuWjQ"
+            },
+            {
+                "image": "0B1uMHsSu0YjdNHR1X2g3UFVlMWc"
+            },
+            {
+                "image": "0B1uMHsSu0YjdTzVYRlFkR1J4RkE"
+            },
+            {
+                "image": "0B1uMHsSu0YjdcVZpVEwzU0ZvWlk"
+            }
+        ],
+        "link": "https://github.com/curiositry/mnml-ghost-theme",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Uno Zen",
+        "author": "Kiko Beats",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdRnBfSFIwREhiQU0",
+                "thumbnail": "0B1uMHsSu0YjdOFVvWlJaTU9zdXc"
+            },
+            {
+                "image": "0B1uMHsSu0YjdTVN6R3lwcGJDUTQ"
+            },
+            {
+                "image": "0B1uMHsSu0YjdSkxvWFY1c0xMeHc"
+            }
+        ],
+        "link": "https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Webkid",
+        "author": "webkid.io",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdakQ4UWl4Z1JodzA",
+                "thumbnail": "0B1uMHsSu0YjdZzNXVURLNjYtc2M"
+            },
+            {
+                "image": "0B1uMHsSu0YjdMHdMSlBVYi1YV3M"
+            }
+        ],
+        "link": "https://github.com/wbkd/ghost-wbkd",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Interphase",
+        "author": "Chase Sillevis",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdOS04emRIOU1IXzg",
+                "thumbnail": "0B1uMHsSu0YjdbjZVXzJrWkJkbjQ"
+            },
+            {
+                "image": ""
+            }
+        ],
+        "link": "https://github.com/DeviaVir/ghost-interphase-theme",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "GodoFredo-Blog",
+        "author": "GodoFredoNinja",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdNmVLSkhaQi1LY0E",
+                "thumbnail": "0B1uMHsSu0YjdLWdOT3BTb2IwNUU"
+            },
+            {
+                "image": "0B1uMHsSu0YjdbkhQMWhJemRHQ00"
+            },
+            {
+                "image": "0B1uMHsSu0YjdZE9yaDJrMFp2U2c"
+            }
+        ],
+        "link": "https://github.com/godofredoninja/Mapache/tree/master",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    }
+]}
