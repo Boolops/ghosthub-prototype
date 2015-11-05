@@ -328,6 +328,118 @@
       "free": true,
       "premium": false,
       "minimalictic": false
+    },
+    {
+      "title": "Bastard",
+      "author": "Karlo Espiritu",
+      "gallery":[{"image":"0B1uMHsSu0YjdQXh2ell2Y0VZbHc",
+                  "thumbnail": "0B1uMHsSu0YjdWkluR1UzNGV5S1k"},
+                  {"image":"0B1uMHsSu0YjdWG8yU0ZWVkxCdXM"},
+                  {"image":"0B1uMHsSu0YjdOTZHM3JhRnpUWVE"},
+                  {"image":"0B1uMHsSu0YjdelBMNnZPTklhckU"},
+                  {"image":"0B1uMHsSu0YjdeVFqNTFwSjhfQmc"}
+                ],
+      "link": "http://karloespiritu.github.io/Bastard/",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Phantom",
+      "author": "Dominic Bartl",
+      "gallery":[{"image":"0B1uMHsSu0YjdR21iNjNjXzBNdUk",
+                  "thumbnail": "0B1uMHsSu0YjdcHhXd3Y3UGw1VWs"},
+                  {"image":"0B1uMHsSu0YjdcUxtNHVqQlFwVzA"}
+                ],
+      "link": "https://github.com/Bartinger/phantom",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "VaporFork",
+      "author": "Adam Menges",
+      "gallery":[{"image":"0B1uMHsSu0YjdWUZJT2cwMnIwOVU",
+                  "thumbnail": "0B1uMHsSu0YjdMlZOVEs3Z29KMUU"},
+                  {"image":"0B1uMHsSu0YjdOWRqUTl6aDNLQ0k"},
+                  {"image":"0B1uMHsSu0YjdeHpCbnZ5d1YzSFk"}
+                ],
+      "link": "https://github.com/adammenges/VaporFork",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+
+
+    {
+      "title": "Perfetta",
+      "author": "GavickPro",
+      "gallery":[{"image":"0B1uMHsSu0YjdVGFaVkZLc1NIVEE",
+                  "thumbnail": "0B1uMHsSu0YjdVkFxT1R4OGdBN0k"},
+                  {"image":"0B1uMHsSu0YjdTnJDNGJBSUZxdE0"},
+                  {"image":"0B1uMHsSu0YjdcTlIdnBkZnJQZjQ"},
+                  {"image":"0B1uMHsSu0YjdMXRJNHA4RTU1WEU"}
+                ],
+      "link": "https://github.com/GavickPro/Perfetta-Free-Ghost-Theme",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "Decode",
+      "author": "Scott Smith",
+      "gallery":[{"image":"0B1uMHsSu0YjdNXBfdFVsWEprSjg",
+                  "thumbnail": "0B1uMHsSu0YjdSEZySXJzUW5mdm8"},
+                  {"image":"0B1uMHsSu0YjdWEJ0Y01TdG5XM28"},
+                  {"image":"0B1uMHsSu0YjdVjFPNGFSWnNRcU0"},
+                  {"image":"0B1uMHsSu0YjdQzFKLWpadzlldTg"},
+                  {"image":"0B1uMHsSu0YjdZHRxOFphV0JNWTQ"}
+                ],
+      "link": "https://github.com/ScottSmith95/Decode-for-Ghost",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "Sheet",
+      "author": "Brian O'Keefe",
+      "gallery":[{"image":"0B1uMHsSu0YjdYUxTVF9lbXdEekk",
+                  "thumbnail": "0B1uMHsSu0YjdR1oySWU5UE5pVFU"},
+                  {"image":"0B1uMHsSu0YjdVHBnWkFQZ1QwMXM"},
+                  {"image":"0B1uMHsSu0YjdZHkwZ2lWSzI4S28"},
+                  {"image":"0B1uMHsSu0YjdYlhfWVktc292N0E"}
+                ],
+      "link": "https://github.com/brianokeefe/sheet",
+      "free": true,
+      "premium": false,
+      "minimalictic": true
+    },
+    {
+      "title": "DayAndNight",
+      "author": "semeano",
+      "gallery":[{"image":"0B1uMHsSu0YjdZU5YcGVpWTI4NDg",
+                  "thumbnail": "0B1uMHsSu0Yjdb1Qzb2YteDQ1YkE"},
+                  {"image":"0B1uMHsSu0YjddDc2bHFTS1R0SjQ"},
+                  {"image":"0B1uMHsSu0YjdbFBrZ3V2RXpybms"},
+                  {"image":"0B1uMHsSu0YjdRUhvMEpNOWczVjA"}
+                ],
+      "link": "hhttps://github.com/semeano/DayAndNight",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
+    },
+    {
+      "title": "OST Ghost",
+      "author": "Harish Chouhan",
+      "gallery":[{"image":"0B1uMHsSu0YjdWUx4UTIxVmhHcEE",
+                  "thumbnail": "0B1uMHsSu0YjdV1MyNVhNbkhZbnM"},
+                  {"image":"0B1uMHsSu0YjdY1pwQThxV2ljWG8"},
+                  {"image":"0B1uMHsSu0YjdOTREclI3S0V2blk"}
+                ],
+      "link": "https://github.com/hchouhan/OST-Ghost-Theme/",
+      "free": true,
+      "premium": false,
+      "minimalictic": false
     }
   ]
 }

@@ -1,0 +1,176 @@
+{"ghost-themes":[
+    {
+        "title": "OpenWriter",
+        "author": "Ire Aderinokun",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdQ2VKYVFFcTlqRnM",
+                "thumbnail": "0B1uMHsSu0YjdYlA3cVpYVW5NUUE"
+            },
+            {
+                "image": "0B1uMHsSu0YjdaUl3T0dKaUhWTUk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdakptVGU1Z3AzR1E"
+            },
+            {
+                "image": "0B1uMHsSu0YjdMGhZa1RYVDNaVm8"
+            }
+        ],
+        "link": "https://github.com/ireade/openwriter",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Ordentlich",
+        "author": "HAPPY CODING",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0Yjda1NISVNTRFpYN2M",
+                "thumbnail": "0B1uMHsSu0YjdVVRjUi10bDdabU0"
+            },
+            {
+                "image": "0B1uMHsSu0YjddUpBeEdHU29XYmM"
+            },
+            {
+                "image": "0B1uMHsSu0YjdbERLQnhkR3o2Q2M"
+            }
+        ],
+        "link": "https://github.com/happy-coding/ordentlich",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Glimpse",
+        "author": "Bensventures",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdeHlBVnRjc3d6V28",
+                "thumbnail": "0B1uMHsSu0YjdbWFzQlY1dVJkckU"
+            },
+            {
+                "image": "0B1uMHsSu0YjdSE9MV245b1BCZzA"
+            },
+            {
+                "image": "0B1uMHsSu0Yjda2czMlFVSXV2U28"
+            },
+            {
+                "image": "0B1uMHsSu0Yjdb2lmMEk2YnoxQUk"
+            }
+        ],
+        "link": "https://github.com/bensventures/Glimpse",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "GoClean",
+        "author": "Jan Metzger",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdclA5cEpWeU9TYXc",
+                "thumbnail": "0B1uMHsSu0YjdOXAwNE05ck5GUXM"
+            },
+            {
+                "image": "0B1uMHsSu0YjdbU9SWjFQLVNjeFk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdOGdGX1VvZ2Z6U00"
+            }
+        ],
+        "link": "https://github.com/Zazama/GoClean",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Hoist",
+        "author": "Hoist",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdSU9IUmJKa0lUenM",
+                "thumbnail": "0B1uMHsSu0Yjdbm5uWlBrTm1sbkE"
+            }
+        ],
+        "link": "http://hoist.io/blog/fresh-open-source-coat-of-paint/",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Plainly",
+        "author": "MrJuliuss",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdZkhRNVRDWFpqaTg",
+                "thumbnail": "0B1uMHsSu0YjdQS1mYVdpdzBmbzQ"
+            },
+            {
+                "image": "0B1uMHsSu0YjdWl9tZHRjQmg2ZlE"
+            },
+            {
+                "image": "0B1uMHsSu0YjdVTR1d1lyaEkwZzQ"
+            }
+        ],
+        "link": "https://github.com/MrJuliuss/plainly",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Gunter",
+        "author": "Germán Encinas",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0Yjdc0FEMFpXQzF4eGM",
+                "thumbnail": "0B1uMHsSu0YjdZFpXdEdjTTFLXzg"
+            },
+            {
+                "image": "0B1uMHsSu0YjdNE9mMDFGQkk5U2M"
+            }
+        ],
+        "link": "https://github.com/germannencinas/Gunter",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
+    },
+    {
+        "title": "Aquila",
+        "author": "lxndio",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdaEFFbXFoZFRUMkE",
+                "thumbnail": "0B1uMHsSu0YjdMkZiTFYxM1NPV0k"
+            },
+            {
+                "image": "0B1uMHsSu0YjdbHpfS1hGLTJuaGM"
+            },
+            {
+                "image": "0B1uMHsSu0YjdMEo1OVBLSlJZbk0"
+            }
+        ],
+        "link": "https://github.com/lxndio/Aquila",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Steam",
+        "author": "Tommaso Barbato",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdUk1fbElKcDRVNk0",
+                "thumbnail": "0B1uMHsSu0YjdVzdSdEFGUDd2Rlk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdNWRLeEJ2dlFfc28"
+            }
+        ],
+        "link": "https://github.com/epistrephein/Steam",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    }
+]}

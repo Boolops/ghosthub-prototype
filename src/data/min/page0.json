@@ -1,0 +1,191 @@
+{"ghost-themes":[
+    {
+        "title": "MNML 3",
+        "author": "Curiositry",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0Yjdb2d2aUxlTF9BbFE",
+                "thumbnail": "0B1uMHsSu0YjdUG40TEdZX2ZuWjQ"
+            },
+            {
+                "image": "0B1uMHsSu0YjdNHR1X2g3UFVlMWc"
+            },
+            {
+                "image": "0B1uMHsSu0YjdTzVYRlFkR1J4RkE"
+            },
+            {
+                "image": "0B1uMHsSu0YjdcVZpVEwzU0ZvWlk"
+            }
+        ],
+        "link": "https://github.com/curiositry/mnml-ghost-theme",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Uno Zen",
+        "author": "Kiko Beats",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdRnBfSFIwREhiQU0",
+                "thumbnail": "0B1uMHsSu0YjdOFVvWlJaTU9zdXc"
+            },
+            {
+                "image": "0B1uMHsSu0YjdTVN6R3lwcGJDUTQ"
+            },
+            {
+                "image": "0B1uMHsSu0YjdSkxvWFY1c0xMeHc"
+            }
+        ],
+        "link": "https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "GodoFredo-Blog",
+        "author": "GodoFredoNinja",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdNmVLSkhaQi1LY0E",
+                "thumbnail": "0B1uMHsSu0YjdLWdOT3BTb2IwNUU"
+            },
+            {
+                "image": "0B1uMHsSu0YjdbkhQMWhJemRHQ00"
+            },
+            {
+                "image": "0B1uMHsSu0YjdZE9yaDJrMFp2U2c"
+            }
+        ],
+        "link": "https://github.com/godofredoninja/Mapache/tree/master",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Aquila",
+        "author": "lxndio",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdaEFFbXFoZFRUMkE",
+                "thumbnail": "0B1uMHsSu0YjdMkZiTFYxM1NPV0k"
+            },
+            {
+                "image": "0B1uMHsSu0YjdbHpfS1hGLTJuaGM"
+            },
+            {
+                "image": "0B1uMHsSu0YjdMEo1OVBLSlJZbk0"
+            }
+        ],
+        "link": "https://github.com/lxndio/Aquila",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Steam",
+        "author": "Tommaso Barbato",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdUk1fbElKcDRVNk0",
+                "thumbnail": "0B1uMHsSu0YjdVzdSdEFGUDd2Rlk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdNWRLeEJ2dlFfc28"
+            }
+        ],
+        "link": "https://github.com/epistrephein/Steam",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Basix",
+        "author": "Emily Young",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdV3E2ZEVtbVVyV3c",
+                "thumbnail": "0B1uMHsSu0YjdV3E2ZEVtbVVyV3c"
+            },
+            {
+                "image": "0B1uMHsSu0YjddzdGNTNoSjJRTG8"
+            },
+            {
+                "image": "0B1uMHsSu0YjddHpLTmJUY2t4akU"
+            },
+            {
+                "image": "0B1uMHsSu0YjdQWZBTzBNRGh3cDQ"
+            }
+        ],
+        "link": "https://github.com/emilyjaneyoung/Basix",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "KISS",
+        "author": "Calin Cruceru",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdQThQZWZsakhTTlE",
+                "thumbnail": "0B1uMHsSu0YjddFNXb0tlWlAzeEk"
+            },
+            {
+                "image": "0B1uMHsSu0YjdT0hVVVdBcWRyQWc"
+            },
+            {
+                "image": "0B1uMHsSu0YjdVVBPQU9xckQybmM"
+            }
+        ],
+        "link": "https://github.com/calincru/KISS",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "VaporFork",
+        "author": "Adam Menges",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdWUZJT2cwMnIwOVU",
+                "thumbnail": "0B1uMHsSu0YjdMlZOVEs3Z29KMUU"
+            },
+            {
+                "image": "0B1uMHsSu0YjdOWRqUTl6aDNLQ0k"
+            },
+            {
+                "image": "0B1uMHsSu0YjdeHpCbnZ5d1YzSFk"
+            }
+        ],
+        "link": "https://github.com/adammenges/VaporFork",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    },
+    {
+        "title": "Decode",
+        "author": "Scott Smith",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdNXBfdFVsWEprSjg",
+                "thumbnail": "0B1uMHsSu0YjdSEZySXJzUW5mdm8"
+            },
+            {
+                "image": "0B1uMHsSu0YjdWEJ0Y01TdG5XM28"
+            },
+            {
+                "image": "0B1uMHsSu0YjdVjFPNGFSWnNRcU0"
+            },
+            {
+                "image": "0B1uMHsSu0YjdQzFKLWpadzlldTg"
+            },
+            {
+                "image": "0B1uMHsSu0YjdZHRxOFphV0JNWTQ"
+            }
+        ],
+        "link": "https://github.com/ScottSmith95/Decode-for-Ghost",
+        "free": true,
+        "premium": false,
+        "minimalictic": true
+    }
+]}
