@@ -1,63 +1,118 @@
-var fs = require('fs');
-var replace = require('replace');
+var fs = require('fs'),
+    replace = require('replace'),
+    path = require('path');
+
+/* HELPER FUNCTIONS --------------------------------------------------------- */
+
+var themeStart = '{"ghost-themes":';
+
+function getDirectories(srcpath) {
+  /* get an array of directories in a directory specified */
+  try {
+    return fs.readdirSync(srcpath).filter(function(file) {
+     return fs.statSync(path.join(srcpath, file)).isDirectory();
+    });
+  } catch(e) {
+    return [];
+  }
+}
+
+function getFilterFunction(filterBy) {
+  /* returns a function to be used as a callback for filtering */
+  return function(element){
+    // special case for homepage filter - return all themes
+    if (filterBy === 'home') {
+      return element;
+    }
+    return element[filterBy];
+  }
+}
+
+var createGroupedArray = function(arr, chunkSize) {
+  /* split array arr into chunks of chunkSize */
+ var groups = [], i;
+ for (i = 0; i < arr.length; i += chunkSize) {
+     groups.push(arr.slice(i, i + chunkSize));
+ }
+ return groups;
+};
+
+var createDirectory = function(dirName){
+  try {
+    stats = fs.lstatSync(dirName);
+    if (!stats.isDirectory()) {
+      fs.mkdirSync(dirName);
+    }
+  }
+  catch (e) {
+     fs.mkdirSync(dirName);
+  }
+};
+
+var processArray = function(arrayVar, path){
+  /* split array into chunks and write each chunk to the corresponding file */
+
+  /* split into chunks */
+  var themesPerPage = 9;
+  var result = createGroupedArray(arrayVar, themesPerPage),
+      pathName;
+
+  /* iterate through chuks */
+  for(var i=0; i< result.length; i++){
+    // create directory
+    pathName = path+'/'+(i+1);
+    createDirectory(pathName);
+    /* write to file */
+    fs.writeFileSync(pathName + '/themes.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
+  }
+};
+/* HELPER FUNCTIONS END ----------------------------------------------------- */
 
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', 'assemble']});
 
-
+  /* generate assemble config ----------------------------------------------- */
   var assembleConfig = {};
 
+  // declare all the categories existing on the site here
+  var categories = ['home', 'free', 'minimalistic', 'premium'];
 
-  for(var i=0; i <= 3; i++){
-    assembleConfig['page' + i] = {
-      options: {
-        flatten: true,
-        layout: 'src/hbs/layouts/main.hbs',
-        data: 'src/data/home/'+ i + '/themes.json',
-        partials: 'src/components/*.hbs'
-      },
-      files:{}
-    };
-    assembleConfig["page" + i]['files']['app/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
-  }
-  for(var i=0; i <= 3; i++){
-    assembleConfig['freePage' + i] = {
-      options: {
-        flatten: true,
-        layout: 'src/hbs/layouts/main.hbs',
-        data: 'src/data/free/'+ i + '/themes.json',
-        partials: 'src/components/*.hbs'
-      },
-      files:{}
-    };
-    assembleConfig["page" + i]['files']['app/free/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
-  }
-  for(var i=0; i <= 2; i++){
-    assembleConfig['minPage' + i] = {
-      options: {
-        flatten: true,
-        layout: 'src/hbs/layouts/main.hbs',
-        data: 'src/data/min/'+ i + '/themes.json',
-        partials: 'src/components/*.hbs'
-      },
-      files:{}
-    };
-    assembleConfig["page" + i]['files']['app/min/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
-  }
-  for(var i=0; i <= 2; i++){
-    assembleConfig['premiumPage' + i] = {
-      options: {
-        flatten: true,
-        layout: 'src/hbs/layouts/main.hbs',
-        data: 'src/data/premium/'+ i + '/themes.json',
-        partials: 'src/components/*.hbs'
-      },
-      files:{}
-    };
-    assembleConfig["page" + i]['files']['app/premium/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
-  }
+  categories.forEach(function(category){
 
+    var pagesCount = getDirectories('src/data/'+category).length,
+        configName, i, filePath;
+
+    for(i=0; i < pagesCount; i++){
+      configName = category+'page' + i;
+      assembleConfig[configName] = {
+        options: {
+          flatten: true,
+          layout: 'src/hbs/layouts/main.hbs',
+          data: 'src/data/'+category+'/'+ (i+1) + '/themes.json',
+          partials: 'src/components/*.hbs'
+        },
+        files:{}
+      };
+
+      filePath = 'app/'+category+'/' + (i+1) + '/index.html';
+      if (category === 'home') {
+        if (i === 0) {
+          filePath = 'app/index.html';
+        } else {
+          filePath = 'app/' + (i+1) + '/index.html';
+        }
+
+      } else {
+        if (i === 0) {
+          filePath = 'app/'+category+'/index.html';
+        }
+      }
+      assembleConfig[configName]['files'][filePath] = ['src/hbs/pages/index.hbs'];
+    }
+  });
+
+  /* finish generating assmeble config -------------------------------------- */
 
   grunt.initConfig({
     assemble: assembleConfig,
@@ -110,45 +165,19 @@ module.exports = function(grunt) {
 
   grunt.registerTask('themesDivider', 'Read info in themes.json into pages', function() {
 
-    var contents = fs.readFileSync('src/data/themes.json').toString();
-    var contentsObj = JSON.parse(contents);
-    var themeStart = '{"ghost-themes":';
+    var contents = JSON.parse(fs.readFileSync('src/data/themes.json').toString());
+    var filtered, dirName;
 
-    function getFilterFunction(filterBy) {
-      return function(element){
-        return element[filterBy];
-      }
-    }
+    categories.forEach(function(category){
+      // get only the themes we need
+      filtered = contents['ghost-themes'].filter(getFilterFunction(category));
+      // create directory
+      dirName = 'src/data/'+ category;
+      createDirectory(dirName);
+      // created folders and write to json files accordingly
+      processArray(filtered, dirName);
+    });
 
-    var createGroupedArray = function(arr, chunkSize) {
-     var groups = [], i;
-     for (i = 0; i < arr.length; i += chunkSize) {
-         groups.push(arr.slice(i, i + chunkSize));
-     }
-     return groups;
-    };
-    var processArray = function(arrayVar, path){
-       var result = createGroupedArray(arrayVar, 9);
-       for(var i=0; i< result.length; i++){
-           try {
-              stats = fs.lstatSync(path + i);
-              if (!stats.isDirectory()) {
-                fs.mkdirSync(path + i);
-              }
-          }
-          catch (e) {
-               fs.mkdirSync(path + i);
-          }
-           fs.writeFileSync(path + i + '/themes.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
-        }
-    };
-    var filteredMin = contentsObj['ghost-themes'].filter(getFilterFunction('minimalistic'));
-    var filteredFree = contentsObj['ghost-themes'].filter(getFilterFunction('free'));
-    var filteredPremium = contentsObj['ghost-themes'].filter(getFilterFunction('premium'));
-    processArray(filteredMin,'src/data/min/');
-    processArray(contentsObj['ghost-themes'], 'src/data/home/');
-    processArray(filteredFree, 'src/data/free/');
-    processArray(filteredPremium, 'src/data/premium/');
   });
 
   grunt.registerTask('basehrefqa', 'Update base href', function() {
@@ -159,8 +188,8 @@ module.exports = function(grunt) {
     replaceHTML('http://boolops.github.io/ghosthub-prototype/', 'http://localhost:8080');
   });
 
-  grunt.registerTask('dev', ['less', 'concat', 'assemble']);
-  grunt.registerTask('default', ['dev', 'basehrefdev', 'express:dev', 'watch']);
-  grunt.registerTask('qa', ['dev', 'basehrefqa']);
+  grunt.registerTask('dev', ['less', 'concat', 'themesDivider', 'assemble']);
+  grunt.registerTask('default', ['dev', 'express:dev', 'watch']);
+  grunt.registerTask('qa', ['dev']);
 
 };

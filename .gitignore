@@ -1,2 +1,8 @@
 node_modules
 pages/assets
+app/**/*.html
+src/data/home
+src/data/free
+src/data/minimalistic
+src/data/premium
+app/assets
