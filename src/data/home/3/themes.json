@@ -17,7 +17,7 @@
         "link": "https://github.com/adammenges/VaporFork",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Perfetta",
@@ -40,7 +40,7 @@
         "link": "https://github.com/GavickPro/Perfetta-Free-Ghost-Theme",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Decode",
@@ -66,7 +66,7 @@
         "link": "https://github.com/ScottSmith95/Decode-for-Ghost",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Sheet",
@@ -89,7 +89,7 @@
         "link": "https://github.com/brianokeefe/sheet",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "DayAndNight",
@@ -112,7 +112,7 @@
         "link": "hhttps://github.com/semeano/DayAndNight",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "OST Ghost",
@@ -132,6 +132,6 @@
         "link": "https://github.com/hchouhan/OST-Ghost-Theme/",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     }
 ]}

@@ -20,7 +20,7 @@
         "link": "https://github.com/emilyjaneyoung/Basix",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Swaggy Bastard",
@@ -43,7 +43,7 @@
         "link": "https://github.com/misterGF/Swaggy-Bastard",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Saga",
@@ -63,7 +63,7 @@
         "link": "https://github.com/Reedyn/Saga",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Lanyon",
@@ -86,7 +86,7 @@
         "link": "https://github.com/PxlBuzzard/lanyon-ghost",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "KISS",
@@ -106,7 +106,7 @@
         "link": "https://github.com/calincru/KISS",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Faux Ghost",
@@ -126,7 +126,7 @@
         "link": "https://github.com/jimbobbennett/FauxGhost",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Typesome",
@@ -143,7 +143,7 @@
         "link": "http://golem.io/ghost-themes/typesome/",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Bastard",
@@ -169,7 +169,7 @@
         "link": "http://karloespiritu.github.io/Bastard/",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Phantom",
@@ -186,6 +186,6 @@
         "link": "https://github.com/Bartinger/phantom",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     }
 ]}

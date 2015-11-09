@@ -13,7 +13,7 @@
       "link": "https://github.com/ozywuli/escritor-ghost-theme",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Mneme",
@@ -28,7 +28,7 @@
       "link": "https://github.com/messier219/mneme/",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Brage",
@@ -41,7 +41,7 @@
       "link": "https://github.com/switchbitio/brage-ghost-theme",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Ascend",
@@ -55,7 +55,7 @@
       "link": "http://ascend.aftertype.com/",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "MNML 3",
@@ -69,7 +69,7 @@
       "link": "https://github.com/curiositry/mnml-ghost-theme",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Uno Zen",
@@ -82,7 +82,7 @@
       "link": "https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Webkid",
@@ -94,7 +94,7 @@
       "link": "https://github.com/wbkd/ghost-wbkd",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Interphase",
@@ -106,7 +106,7 @@
       "link": "https://github.com/DeviaVir/ghost-interphase-theme",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "GodoFredo-Blog",
@@ -119,7 +119,7 @@
       "link": "https://github.com/godofredoninja/Mapache/tree/master",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "OpenWriter",
@@ -133,7 +133,7 @@
       "link": "https://github.com/ireade/openwriter",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Ordentlich",
@@ -146,7 +146,7 @@
       "link": "https://github.com/happy-coding/ordentlich",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Glimpse",
@@ -160,7 +160,7 @@
       "link": "https://github.com/bensventures/Glimpse",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "GoClean",
@@ -173,7 +173,7 @@
       "link": "https://github.com/Zazama/GoClean",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Hoist",
@@ -184,7 +184,7 @@
       "link": "http://hoist.io/blog/fresh-open-source-coat-of-paint/",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Plainly",
@@ -197,7 +197,7 @@
       "link": "https://github.com/MrJuliuss/plainly",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Gunter",
@@ -209,7 +209,7 @@
       "link": "https://github.com/germannencinas/Gunter",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Aquila",
@@ -222,7 +222,7 @@
       "link": "https://github.com/lxndio/Aquila",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Steam",
@@ -234,7 +234,7 @@
       "link": "https://github.com/epistrephein/Steam",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Basix",
@@ -248,7 +248,7 @@
       "link": "https://github.com/emilyjaneyoung/Basix",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Swaggy Bastard",
@@ -262,7 +262,7 @@
       "link": "https://github.com/misterGF/Swaggy-Bastard",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Saga",
@@ -275,7 +275,7 @@
       "link": "https://github.com/Reedyn/Saga",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Lanyon",
@@ -289,7 +289,7 @@
       "link": "https://github.com/PxlBuzzard/lanyon-ghost",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "KISS",
@@ -302,7 +302,7 @@
       "link": "https://github.com/calincru/KISS",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Faux Ghost",
@@ -315,7 +315,7 @@
       "link": "https://github.com/jimbobbennett/FauxGhost",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Typesome",
@@ -327,7 +327,7 @@
       "link": "http://golem.io/ghost-themes/typesome/",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Bastard",
@@ -342,7 +342,7 @@
       "link": "http://karloespiritu.github.io/Bastard/",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Phantom",
@@ -354,7 +354,7 @@
       "link": "https://github.com/Bartinger/phantom",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "VaporFork",
@@ -367,7 +367,7 @@
       "link": "https://github.com/adammenges/VaporFork",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
 
 
@@ -383,7 +383,7 @@
       "link": "https://github.com/GavickPro/Perfetta-Free-Ghost-Theme",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "Decode",
@@ -398,7 +398,7 @@
       "link": "https://github.com/ScottSmith95/Decode-for-Ghost",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "Sheet",
@@ -412,7 +412,7 @@
       "link": "https://github.com/brianokeefe/sheet",
       "free": true,
       "premium": false,
-      "minimalictic": true
+      "minimalistic": true
     },
     {
       "title": "DayAndNight",
@@ -426,7 +426,7 @@
       "link": "hhttps://github.com/semeano/DayAndNight",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     },
     {
       "title": "OST Ghost",
@@ -439,7 +439,7 @@
       "link": "https://github.com/hchouhan/OST-Ghost-Theme/",
       "free": true,
       "premium": false,
-      "minimalictic": false
+      "minimalistic": false
     }
   ]
 }

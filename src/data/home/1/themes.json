@@ -20,7 +20,7 @@
         "link": "https://github.com/ireade/openwriter",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Ordentlich",
@@ -40,7 +40,7 @@
         "link": "https://github.com/happy-coding/ordentlich",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Glimpse",
@@ -63,7 +63,7 @@
         "link": "https://github.com/bensventures/Glimpse",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "GoClean",
@@ -83,7 +83,7 @@
         "link": "https://github.com/Zazama/GoClean",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Hoist",
@@ -97,7 +97,7 @@
         "link": "http://hoist.io/blog/fresh-open-source-coat-of-paint/",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Plainly",
@@ -117,7 +117,7 @@
         "link": "https://github.com/MrJuliuss/plainly",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Gunter",
@@ -134,7 +134,7 @@
         "link": "https://github.com/germannencinas/Gunter",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Aquila",
@@ -154,7 +154,7 @@
         "link": "https://github.com/lxndio/Aquila",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Steam",
@@ -171,6 +171,6 @@
         "link": "https://github.com/epistrephein/Steam",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     }
 ]}

@@ -18,10 +18,6 @@ module.exports = function(grunt) {
         partials: 'src/components/*.hbs'
       },
       files:{}
-
-      // files: {
-      //   'app/page' + i + '.html': ['src/hbs/pages/index.hbs']
-      // }
     };
     assembleConfig["page" + i]['files']['app/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
   }
@@ -112,46 +108,32 @@ module.exports = function(grunt) {
   };
 
 
-  grunt.registerTask('themesDivider', 'Update base href', function() {
-    var fs = require('fs');
+  grunt.registerTask('themesDivider', 'Read info in themes.json into pages', function() {
+
     var contents = fs.readFileSync('src/data/themes.json').toString();
     var contentsObj = JSON.parse(contents);
     var themeStart = '{"ghost-themes":';
-    var minimalisticContent = function(element){
-       if (element.minimalictic  === true){
-         return true;
-      }
-     };
-     var freeContent = function(element){
-       if(element.free === true){
-         return true;
-       }
-     };
-     var premiumContent = function(element){
-       if(element.premium === true){
-         return true;
-       }
-     };
-     var createGroupedArray = function(arr, chunkSize) {
-       var groups = [], i;
-       for (i = 0; i < arr.length; i += chunkSize) {
-           groups.push(arr.slice(i, i + chunkSize));
-       }
-       return groups;
-     };
-     var processArray = function(arrayVar, path){
 
+    function getFilterFunction(filterBy) {
+      return function(element){
+        return element[filterBy];
+      }
+    }
+
+    var createGroupedArray = function(arr, chunkSize) {
+     var groups = [], i;
+     for (i = 0; i < arr.length; i += chunkSize) {
+         groups.push(arr.slice(i, i + chunkSize));
+     }
+     return groups;
+    };
+    var processArray = function(arrayVar, path){
        var result = createGroupedArray(arrayVar, 9);
        for(var i=0; i< result.length; i++){
            try {
-              // Query the entry
               stats = fs.lstatSync(path + i);
-
-              // Is it a directory?
-              if (stats.isDirectory()) {
-                  // Yes it is
-              } else{
-                 fs.mkdirSync(path + i);
+              if (!stats.isDirectory()) {
+                fs.mkdirSync(path + i);
               }
           }
           catch (e) {
@@ -159,16 +141,14 @@ module.exports = function(grunt) {
           }
            fs.writeFileSync(path + i + '/themes.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
         }
-     };
-    var filteredMin = contentsObj['ghost-themes'].filter(minimalisticContent);
-    var filteredFree = contentsObj['ghost-themes'].filter(freeContent);
-    var filteredPremium = contentsObj['ghost-themes'].filter(premiumContent);
-
+    };
+    var filteredMin = contentsObj['ghost-themes'].filter(getFilterFunction('minimalistic'));
+    var filteredFree = contentsObj['ghost-themes'].filter(getFilterFunction('free'));
+    var filteredPremium = contentsObj['ghost-themes'].filter(getFilterFunction('premium'));
     processArray(filteredMin,'src/data/min/');
     processArray(contentsObj['ghost-themes'], 'src/data/home/');
     processArray(filteredFree, 'src/data/free/');
     processArray(filteredPremium, 'src/data/premium/');
-
   });
 
   grunt.registerTask('basehrefqa', 'Update base href', function() {

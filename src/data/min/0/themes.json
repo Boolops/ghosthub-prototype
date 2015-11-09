@@ -20,7 +20,7 @@
         "link": "https://github.com/curiositry/mnml-ghost-theme",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Uno Zen",
@@ -40,7 +40,7 @@
         "link": "https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "GodoFredo-Blog",
@@ -60,7 +60,7 @@
         "link": "https://github.com/godofredoninja/Mapache/tree/master",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Aquila",
@@ -80,7 +80,7 @@
         "link": "https://github.com/lxndio/Aquila",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Steam",
@@ -97,7 +97,7 @@
         "link": "https://github.com/epistrephein/Steam",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Basix",
@@ -120,7 +120,7 @@
         "link": "https://github.com/emilyjaneyoung/Basix",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "KISS",
@@ -140,7 +140,7 @@
         "link": "https://github.com/calincru/KISS",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "VaporFork",
@@ -160,7 +160,7 @@
         "link": "https://github.com/adammenges/VaporFork",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Decode",
@@ -186,6 +186,6 @@
         "link": "https://github.com/ScottSmith95/Decode-for-Ghost",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     }
 ]}

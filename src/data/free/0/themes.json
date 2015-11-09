@@ -20,7 +20,7 @@
         "link": "https://github.com/ozywuli/escritor-ghost-theme",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Mneme",
@@ -46,7 +46,7 @@
         "link": "https://github.com/messier219/mneme/",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Brage",
@@ -66,7 +66,7 @@
         "link": "https://github.com/switchbitio/brage-ghost-theme",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Ascend",
@@ -89,7 +89,7 @@
         "link": "http://ascend.aftertype.com/",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "MNML 3",
@@ -112,7 +112,7 @@
         "link": "https://github.com/curiositry/mnml-ghost-theme",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Uno Zen",
@@ -132,7 +132,7 @@
         "link": "https://github.com/Kikobeats/uno-zen#uno-zen-for-ghost",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     },
     {
         "title": "Webkid",
@@ -149,7 +149,7 @@
         "link": "https://github.com/wbkd/ghost-wbkd",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "Interphase",
@@ -166,7 +166,7 @@
         "link": "https://github.com/DeviaVir/ghost-interphase-theme",
         "free": true,
         "premium": false,
-        "minimalictic": false
+        "minimalistic": false
     },
     {
         "title": "GodoFredo-Blog",
@@ -186,6 +186,6 @@
         "link": "https://github.com/godofredoninja/Mapache/tree/master",
         "free": true,
         "premium": false,
-        "minimalictic": true
+        "minimalistic": true
     }
 ]}
