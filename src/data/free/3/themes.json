@@ -113,5 +113,25 @@
         "free": true,
         "premium": false,
         "minimalictic": false
+    },
+    {
+        "title": "OST Ghost",
+        "author": "Harish Chouhan",
+        "gallery": [
+            {
+                "image": "0B1uMHsSu0YjdWUx4UTIxVmhHcEE",
+                "thumbnail": "0B1uMHsSu0YjdV1MyNVhNbkhZbnM"
+            },
+            {
+                "image": "0B1uMHsSu0YjdY1pwQThxV2ljWG8"
+            },
+            {
+                "image": "0B1uMHsSu0YjdOTREclI3S0V2blk"
+            }
+        ],
+        "link": "https://github.com/hchouhan/OST-Ghost-Theme/",
+        "free": true,
+        "premium": false,
+        "minimalictic": false
     }
 ]}

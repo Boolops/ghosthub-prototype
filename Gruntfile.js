@@ -5,31 +5,66 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', 'assemble']});
 
+
+  var assembleConfig = {};
+
+
+  for(var i=0; i <= 3; i++){
+    assembleConfig['page' + i] = {
+      options: {
+        flatten: true,
+        layout: 'src/hbs/layouts/main.hbs',
+        data: 'src/data/home/'+ i + '/themes.json',
+        partials: 'src/components/*.hbs'
+      },
+      files:{}
+
+      // files: {
+      //   'app/page' + i + '.html': ['src/hbs/pages/index.hbs']
+      // }
+    };
+    assembleConfig["page" + i]['files']['app/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
+  }
+  for(var i=0; i <= 3; i++){
+    assembleConfig['freePage' + i] = {
+      options: {
+        flatten: true,
+        layout: 'src/hbs/layouts/main.hbs',
+        data: 'src/data/free/'+ i + '/themes.json',
+        partials: 'src/components/*.hbs'
+      },
+      files:{}
+    };
+    assembleConfig["page" + i]['files']['app/free/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
+  }
+  for(var i=0; i <= 2; i++){
+    assembleConfig['minPage' + i] = {
+      options: {
+        flatten: true,
+        layout: 'src/hbs/layouts/main.hbs',
+        data: 'src/data/min/'+ i + '/themes.json',
+        partials: 'src/components/*.hbs'
+      },
+      files:{}
+    };
+    assembleConfig["page" + i]['files']['app/min/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
+  }
+  for(var i=0; i <= 2; i++){
+    assembleConfig['premiumPage' + i] = {
+      options: {
+        flatten: true,
+        layout: 'src/hbs/layouts/main.hbs',
+        data: 'src/data/premium/'+ i + '/themes.json',
+        partials: 'src/components/*.hbs'
+      },
+      files:{}
+    };
+    assembleConfig["page" + i]['files']['app/premium/page' + i + '.html'] = ['src/hbs/pages/index.hbs'];
+  }
+
+
   grunt.initConfig({
-    assemble: {
-      // options: {
-      //   flatten: true,
-      //   layout: 'src/hbs/layouts/main.hbs',
-      //   //data: 'src/data/themes.json',
-      //   partials: 'src/components/*.hbs'
-      // },
-      // pages: {
-      //   files: {
-      //     'app/': ['src/hbs/pages/index.hbs', 'src/hbs/pages/free.hbs', 'src/hbs/pages/premium.hbs', 'src/hbs/pages/minimalistic.hbs']
-      //   }
-      // },
-      page1: {
-        options: {
-          flatten: true,
-          layout: 'src/hbs/layouts/main.hbs',
-          data: 'src/data/page0.json',
-          partials: 'src/components/*.hbs'
-        },
-        files: {
-          'app/page1.html': ['src/hbs/pages/index.hbs']
-        }
-      }
-    },
+    assemble: assembleConfig,
     less: {
       dev: {
         files: {
@@ -108,17 +143,31 @@ module.exports = function(grunt) {
 
        var result = createGroupedArray(arrayVar, 9);
        for(var i=0; i< result.length; i++){
-           fs.writeFileSync(path + i + '.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
-       }
+           try {
+              // Query the entry
+              stats = fs.lstatSync(path + i);
+
+              // Is it a directory?
+              if (stats.isDirectory()) {
+                  // Yes it is
+              } else{
+                 fs.mkdirSync(path + i);
+              }
+          }
+          catch (e) {
+               fs.mkdirSync(path + i);
+          }
+           fs.writeFileSync(path + i + '/themes.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
+        }
      };
     var filteredMin = contentsObj['ghost-themes'].filter(minimalisticContent);
     var filteredFree = contentsObj['ghost-themes'].filter(freeContent);
     var filteredPremium = contentsObj['ghost-themes'].filter(premiumContent);
 
-    processArray(filteredMin,'src/data/min/page');
-    processArray(contentsObj['ghost-themes'], 'src/data/page');
-    processArray(filteredFree, 'src/data/free/page');
-    processArray(filteredPremium, 'src/data/premium/page');
+    processArray(filteredMin,'src/data/min/');
+    processArray(contentsObj['ghost-themes'], 'src/data/home/');
+    processArray(filteredFree, 'src/data/free/');
+    processArray(filteredPremium, 'src/data/premium/');
 
   });
 
