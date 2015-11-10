@@ -37,6 +37,12 @@ var createGroupedArray = function(arr, chunkSize) {
  return groups;
 };
 
+function range(start, stop, step){
+  var a=[start], b=start;
+  while(b<stop){b+=step;a.push(b)}
+  return a;
+};
+
 var createDirectory = function(dirName){
   try {
     stats = fs.lstatSync(dirName);
@@ -55,18 +61,20 @@ var processArray = function(arrayVar, path, category){
   /* split into chunks */
   var themesPerPage = 9;
   var result = createGroupedArray(arrayVar, themesPerPage),
-      pathName;
+      pathName, pages = [];
 
   /* iterate through chuks */
   for(var i=0; i< result.length; i++){
     // create directory
     pathName = path+'/'+(i+1);
+    pages = range(1, result.length, 1);
+
     createDirectory(pathName);
     /* write to file */
     fs.writeFileSync(
       pathName + '/themes.json',
       themeStart + JSON.stringify(result[i], null, 4) +
-      ', "category": "'+ category +'", "page":' + (i+1) + '}');
+      ', "category": "'+ category +'", "page": '+(i+1)+', "pages": [' + pages.join(',') + ']}');
   }
 };
 /* HELPER FUNCTIONS END ----------------------------------------------------- */
