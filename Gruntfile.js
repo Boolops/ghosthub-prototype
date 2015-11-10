@@ -49,7 +49,7 @@ var createDirectory = function(dirName){
   }
 };
 
-var processArray = function(arrayVar, path){
+var processArray = function(arrayVar, path, category){
   /* split array into chunks and write each chunk to the corresponding file */
 
   /* split into chunks */
@@ -63,7 +63,10 @@ var processArray = function(arrayVar, path){
     pathName = path+'/'+(i+1);
     createDirectory(pathName);
     /* write to file */
-    fs.writeFileSync(pathName + '/themes.json', themeStart + JSON.stringify(result[i], null, 4) + '}');
+    fs.writeFileSync(
+      pathName + '/themes.json',
+      themeStart + JSON.stringify(result[i], null, 4) +
+      ', "category": "'+ category +'", "page":' + (i+1) + '}');
   }
 };
 /* HELPER FUNCTIONS END ----------------------------------------------------- */
@@ -175,7 +178,7 @@ module.exports = function(grunt) {
       dirName = 'src/data/'+ category;
       createDirectory(dirName);
       // created folders and write to json files accordingly
-      processArray(filtered, dirName);
+      processArray(filtered, dirName, category);
     });
 
   });
