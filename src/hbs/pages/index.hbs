@@ -1,9 +1,9 @@
 {{#with themes}}
   <div class="navigation">
       <ul class="breadcrumb">
-        <li><a href="free.html">Free</a></li>
-        <li><a href="premium.html">Premium</a></li>
-        <li><a href="minimalistic.html">Minimalistic</a></li>
+        <li{{#is category 'free'}} class = "active"{{/is}}><a href="free.html">Free</a></li>
+        <li{{#is category 'premium'}} class = "active"{{/is}}><a href="premium.html">Premium</a></li>
+        <li{{#is category 'minimalistic'}} class = "active"{{/is}}><a href="minimalistic.html">Minimalistic</a></li>
       </ul>
   </div>
   <div class="row">

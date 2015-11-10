@@ -50,7 +50,7 @@ var createDirectory = function(dirName){
 };
 
 var processArray = function(arrayVar, path, category){
-  /* split array into chunks and write each chunk to the corresponding file */
+  /* split array into chunksf and write each chunk to the corresponding file */
 
   /* split into chunks */
   var themesPerPage = 9;
